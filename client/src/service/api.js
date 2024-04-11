@@ -114,8 +114,8 @@ const ProcessError = async (error) => {
     }
 }
 
-// const API = {};
-// API.getAllComments = (postId) => axiosInstance.get(`/comments/${postId}`);
+const API = {};
+API.getAllComments = (postId) => axiosInstance.get(`/comments/${postId}`);
 
 for (const [key, value] of Object.entries(SERVICE_URLS)) {
     API[key] = (body, showUploadProgress, showDownloadProgress) =>

@@ -1,25 +1,25 @@
-// import mongoose from 'mongoose';
+import mongoose from 'mongoose';
 
-// const CommentSchema = mongoose.Schema({
-//     name: {
-//         type: String,
-//         required: true,
-//     },
-//     postId: {
-//         type: String,
-//         required: true
-//     },
-//     date: {
-//         type: String,
-//         required: true
-//     },
-//     comments: {
-//         type: String,
-//         required: true
-//     }
-// });
+const CommentSchema = mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    postId: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: String,
+        required: true
+    },
+    comments: {
+        type: String,
+        required: true
+    }
+});
 
 
-// const comment = mongoose.model('bcomment', CommentSchema);
+const comment = mongoose.model('bcomment', CommentSchema);
 
-// export default comment;
+export default comment;
