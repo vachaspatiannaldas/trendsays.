@@ -71,7 +71,7 @@ const Comments = ({ post }) => {
             try {
                 const response = await API.getAllComments(post._id);
                 if (response.isSuccess) {
-                    setComments(response.data);
+                    setComments(response.data.data);
                 }
             } catch (error) {
                 console.error("Error fetching comments:", error);
