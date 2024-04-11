@@ -2,7 +2,7 @@ import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
 // const url = 'http://localhost:8000';
-const url = process.env.PORT ? `https://${process.env.PORT}` : 'http://localhost:8000';
+const url = process.env.VERCEL_URL;
 
 let gfs, gridfsBucket;
 const conn = mongoose.connection;

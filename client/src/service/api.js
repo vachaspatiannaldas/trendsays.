@@ -5,10 +5,10 @@ import { getAccessToken, getRefreshToken, setAccessToken, getType } from '../uti
 
 // const API_URL = 'http://localhost:8000';
 
-const API_URL = `${window.location.origin}`;
+// const API_URL = `${window.location.origin}`;
 
 const axiosInstance = axios.create({
-    baseURL: API_URL,
+    baseURL: "/",
     timeout: 10000, 
     headers: {
         "content-type": "application/json"
