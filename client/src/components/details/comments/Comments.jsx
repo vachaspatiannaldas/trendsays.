@@ -48,7 +48,7 @@ const initialValue = {
     comments: ''
 }
 
-const Comments = ({ post }) => {
+const Comments = ({ post,id }) => {
 
     const [comment, setComment] = useState(initialValue);
     const [comments, setComments] = useState([]);
@@ -70,8 +70,9 @@ const Comments = ({ post }) => {
         const getData = async () => {
             try {
                 const response = await API.getAllComments(post._id);
+                console.log(response);
                 if (response.isSuccess) {
-                    setComments(response.data.data);
+                    setComments(response.data);
                 }
             } catch (error) {
                 console.error("Error fetching comments:", error);
@@ -116,12 +117,12 @@ const Comments = ({ post }) => {
             </Container>
             <Box>
                 {
-                    comments && comments.length > 0 && comments.map(comment => (
-                        <Comment comment={comment} setToggle={setToggle} />
-                    ))
-                    // Array.isArray(comments) && comments?.map(comment => (
-                    //     <Comment key={comment._id} comment={comment} setToggle={setToggle} />
-                    // ))                    
+                    // comments && comments.length > 0 && comments.map(comment => (
+                    //     <Comment comment={comment} setToggle={setToggle} />
+                    // ))
+                    Array.isArray(comments) && comments?.map(comment => (
+                        <Comment key={comment._id} comment={comment} setToggle={setToggle} />
+                    ))                    
                 }
             </Box>
         </BoxC>

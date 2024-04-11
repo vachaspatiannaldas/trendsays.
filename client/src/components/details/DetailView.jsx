@@ -77,7 +77,7 @@ const DetailView = () => {
 
     const navigate = useNavigate();
     const { id } = useParams();
-    
+     console.log('id',id);
     useEffect(() => {
         const fetchData = async () => {
             let response = await API.getPostById(id);
@@ -117,7 +117,7 @@ const DetailView = () => {
 
             <DescHead>{post.description}</DescHead>
             </BoxD>
-            <Comments post={post} />
+            <Comments post={post} id={id} />
         </Container>
     )
 }
