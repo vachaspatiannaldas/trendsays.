@@ -10,7 +10,7 @@ import { DataContext } from '../../context/DataProvider';
 import imagec from '../../assets/images/i2.jpg';
 
 // components
-import Comments from './comments/Comments';
+// import Comments from './comments/Comments';
 
 const Container = styled(Box)(({ theme }) => ({
     margin: '50px 100px',
@@ -117,7 +117,7 @@ const DetailView = () => {
 
             <DescHead>{post.description}</DescHead>
             </BoxD>
-            <Comments post={post} />
+            {/* <Comments post={post} /> */}
         </Container>
     )
 }

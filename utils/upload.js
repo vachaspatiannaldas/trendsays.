@@ -11,8 +11,9 @@ const storage = new GridFsStorage({
     url: `mongodb+srv://${username}:${password}@crud-app.nxfckgk.mongodb.net/?retryWrites=true&w=majority&appName=crud-app`,
     options: { useNewUrlParser: true },
     file: (request, file) => {
-        const match = ["image/png", "image/jpg"];
-
+        // const match = ["image/png", "image/jpg"];
+        const match = ["image/png", "image/jpg", "image/jpeg", "image/webp"];
+        
         if(match.indexOf(file.memeType) === -1) 
             return`${Date.now()}-blog-${file.originalname}`;
 
