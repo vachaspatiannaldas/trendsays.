@@ -116,11 +116,16 @@ const Comments = ({ post }) => {
             </Container>
             <Box>
                 {
-                    comments && comments.length > 0 && comments.map(comment => (
-                        <Comment comment={comment} setToggle={setToggle} />
-                    ))
+                    Array.isArray(comments) && comments.length > 0 ? (
+                        comments.map(comment => (
+                            <Comment key={comment._id} comment={comment} setToggle={setToggle} />
+                        ))
+                    ) : (
+                        <p>No comments available</p>
+                    )
                 }
             </Box>
+
         </BoxC>
     )
 }
