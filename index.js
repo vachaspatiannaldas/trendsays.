@@ -19,7 +19,7 @@ const corsConfig ={
 
 app.options("", cors(corsConfig));
 app.use(cors(corsConfig));
-//this
+
 
 
 const __filename = fileURLToPath(import.meta.url);
