@@ -119,7 +119,7 @@ const Comments = ({ post }) => {
                     // comments && comments.length > 0 && comments.map(comment => (
                     //     <Comment comment={comment} setToggle={setToggle} />
                     // ))
-                    comments.map(comment => (
+                    Array.isArray(comments) && comments?.map(comment => (
                         <Comment key={comment._id} comment={comment} setToggle={setToggle} />
                     ))                    
                 }
