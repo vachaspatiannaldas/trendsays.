@@ -13,6 +13,10 @@ Visit the live site: https://trendsay.vercel.app
 - Backend: Node.js, Express.js
 - Database: MongoDB
 
+### Screenshots
+- Homepage
+![screenshot-trendsay vercel app-2024 07 21-09_30_09](https://github.com/user-attachments/assets/9c26d193-700e-42b5-9d5b-d72ea19b4e8a)
+
 ### Installation
 1. Clone the repository:
 ```
