@@ -1,4 +1,4 @@
-# TrendSays
+# TrendSays.
 TrendSays is a cutting-edge blog platform that covers trending subjects in technology, lifestyle, science, entertainment, space, and education. This platform features a user-friendly content management system that optimizes author workflows, enhances website responsiveness, and provides filtering functionalities for a personalized user experience.
 
 Visit the live site: https://trendsay.vercel.app
@@ -15,15 +15,19 @@ Visit the live site: https://trendsay.vercel.app
 
 ### Screenshots
 - Home Page
+  
 ![screenshot-trendsay vercel app-2024 07 21-09_30_09](https://github.com/user-attachments/assets/9c26d193-700e-42b5-9d5b-d72ea19b4e8a)
 
 - Create Blog Page
+  
 ![screenshot-trendsay vercel app-2024 07 21-09_31_08](https://github.com/user-attachments/assets/bce772f1-2c09-4deb-9428-321ef41ede6b)
 
 - Blog Description
+  
 ![screenshot-trendsay vercel app-2024 07 21-09_39_31](https://github.com/user-attachments/assets/ae09e7f0-da51-4500-9279-1754098da199)
 
 - Login Page
+  
 ![screenshot-trendsay vercel app-2024 07 21-13_58_51](https://github.com/user-attachments/assets/0fa8ffd8-5d23-4812-8660-b148189fed80)
 
 
