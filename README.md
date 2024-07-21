@@ -14,29 +14,25 @@ Visit the live site: https://trendsay.vercel.app
 - Database: MongoDB
 
 ### Installation
-```
 1. Clone the repository:
-bash
+```
 git clone https://github.com/your-username/trendsays.git
 cd trendsays
 ```
 
 2. Install the dependencies:
 ```
-bash
 npm install
 #or
 yarn install
 ```
 4. Set up environment variables. Create a .env file in the root directory and add the following:
 ```
-env
 MONGODB_URI=your_mongodb_uri
 PORT=your_preferred_port
 ```
 4. Start the development server:
 ```
-bash
 npm run dev
 #or
 yarn dev
