@@ -20,7 +20,7 @@ cd trendsays
 2. Install the dependencies:
 bash
 npm install
-# or
+#or
 yarn install
 
 3. Set up environment variables. Create a .env file in the root directory and add the following:
@@ -31,7 +31,7 @@ PORT=your_preferred_port
 4. Start the development server:
 bash
 npm run dev
-# or
+#or
 yarn dev
 
 ### Usage
